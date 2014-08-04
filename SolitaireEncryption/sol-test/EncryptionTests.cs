@@ -43,8 +43,22 @@ namespace soltest
 		[Test ()]
 		public void TestKey_foo ()
 		{
-			var output = TestKeyText ("foo", "AAAAAAAAAAAAAAA");
-			Assert.AreEqual("ITHZU JIWGR FARMW", output);
+			var output = TestKeyText ("petzold", "AAAAAAAAAAAAAAA");
+            Assert.AreEqual("UTWJH XSTGX BGAWX", output);
+		}
+
+		[Test ()]
+		public void TestKey_foo8 ()
+		{
+			var output = TestKeyText ("petzold", "8AAAAAAAAAAAAAA");
+            Assert.AreEqual("UTWJH XSTGX BGAWU", output);
+		}
+
+		[Test ()]
+		public void TestKey_MS8_Encrypt ()
+		{
+			var output = TestKeyText ("PETZOLD", "MIKESCOTT8");
+            Assert.AreEqual("GBGNZ ZGMZU", output);
 		}
 
 		[Test ()]
